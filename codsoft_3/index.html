@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="utils.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <img src="images/moon.png" id="icon">
+
+    <div class="cal-outer-body">
+        <div class="cal-inner-body">
+            <h1 class="text-center">Calculator App</h1>
+            <div class="container flex flex-col items-center">
+
+                <div class="row">
+                    <input type="text" class="input">
+                </div>
+
+                <div class="row">
+                    <button class="button arithmetic">C</button>
+                    <button class="button arithmetic">%</button>
+                    <button class="button arithmetic">←</button>
+                    <button class="button arithmetic">*</button>
+
+                </div>
+
+                <div class="row">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button arithmetic">+</button>
+
+                </div>
+
+                <div class="row">
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button arithmetic">-</button>
+
+                </div>
+
+                <div class="row">
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button arithmetic">/</button>
+
+                </div>
+
+                <div class="row">
+                    <button class="button">00</button>
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button arithmetic">=</button>
+
+                </div>
+
+
+                <div class="history">
+                    <h2 class="historyHeadline">Calculation History <a class="clearHistory"
+                            title="Click to clear Calculation History">	<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 -9 37 36" fill="none">
+  <g filter="url(#filter0_di_75_28)">
+    <rect x="9.83887" y="12.631" width="3.99178" height="19.9589" rx="1.99589" transform="rotate(-45 9.83887 12.631)" fill="white"/>
+    <rect x="24.0162" y="9.88483" width="3.99178" height="19.9589" rx="1.99589" transform="rotate(45 24.0162 9.88483)" fill="white"/>
+  </g>
+  <defs>
+    <filter id="filter0_di_75_28" x="0.665588" y="0.635071" width="35.3466" height="35.3587" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.72 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_75_28"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_75_28" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="1" dy="1"/>
+      <feGaussianBlur stdDeviation="1"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"/>
+      <feBlend mode="normal" in2="shape" result="effect2_innerShadow_75_28"/>
+    </filter>
+  </defs>
+</svg></a></h2>
+                    <ul id="history-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
